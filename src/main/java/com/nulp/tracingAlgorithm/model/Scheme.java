@@ -28,7 +28,7 @@ public class Scheme {
     public void connectNodes(String firstNodeName, String secondNodeName) {
         Node firstNode = (Node) cells.stream().filter(cell -> cell.getName().equals(firstNodeName)).findAny().get();
         Node secondNode = (Node) cells.stream().filter(cell -> cell.getName().equals(secondNodeName)).findAny().get();
-        connections.add(new Connection(firstNode, secondNode, false));
+        connections.add(new Connection(firstNode, secondNode));
     }
 
     public List<Cell> getPossibleWires(String indexNumber) {
@@ -67,19 +67,6 @@ public class Scheme {
         return null;
     }
 
-    public void increaseSize() {
-        draw();
-        xMax++;
-        yMax++;
-        for (int i = 0; i < yMax; i++) {
-            cells.add(new Cell("0", xMax - 1, i));
-        }
-        for (int i = 0; i < xMax; i++) {
-            cells.add(new Cell("0", i, yMax - 1));
-        }
-        draw();
-    }
-
     public void clearPossibleWires() {
         List<Cell> possibleCells = cells.stream().filter(cell -> cell.getClass() == PossibleWire.class).collect(Collectors.toList());
         possibleCells.forEach(cell -> updateCell(new Cell("0", cell.getCoordinate().getX(), cell.getCoordinate().getY())));
@@ -111,24 +98,12 @@ public class Scheme {
         System.out.println();
     }
 
-    public List<Cell> getCells() {
-        return cells;
-    }
-
-    public void setCells(List<Cell> cells) {
-        this.cells = cells;
-    }
-
     public Cell getCell(Coordinate coordinate) {
         return cells.stream().filter(cell -> cell.getCoordinate().equals(coordinate)).findAny().get();
     }
 
     public List<Connection> getConnections() {
         return connections;
-    }
-
-    public void setConnections(List<Connection> connections) {
-        this.connections = connections;
     }
 
 }

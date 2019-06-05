@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/algrorithm/WaveAlgorithm.java" line="41" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/algrorithm/WaveAlgorithm.java" line="42" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53b45ad6-73d6-40be-bff2-1c44c0df8618" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/algrorithm/WaveAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/algrorithm/WaveAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Coordinate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Scheme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Scheme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nulp/tracingAlgorithm/UnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nulp/tracingAlgorithm/UnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/PossibleWire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/PossibleWire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/Wire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/Wire.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/algrorithm/WaveAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+            <state relative-caret-position="834">
+              <caret line="101" column="39" lean-forward="true" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,10 +39,74 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/Cell.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/nulp/tracingAlgorithm/UnitTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="24" column="36" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="24" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Scheme.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-766">
+              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/PossibleWire.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#174#175#0" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/Wire.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Connection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
+            <state relative-caret-position="323">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#924#925#0" expanded="true" />
                 <element signature="e#997#998#0" expanded="true" />
@@ -49,26 +116,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Scheme.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Coordinate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="544">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4989#4990#0" expanded="true" />
-                <element signature="e#5023#5024#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/nulp/tracingAlgorithm/UnitTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
+                <element signature="e#300#301#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#418#419#0" expanded="true" />
+                <element signature="e#465#466#0" expanded="true" />
+                <element signature="e#501#502#0" expanded="true" />
+                <element signature="e#548#549#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,13 +162,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Wire.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/PossibleWire.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Node.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/Wire.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Coordinate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Connection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/Cell.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Scheme.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/nulp/tracingAlgorithm/UnitTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/Cell.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/PossibleWire.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/Wire.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Connection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Coordinate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Scheme.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/algrorithm/WaveAlgorithm.java" />
       </list>
     </option>
@@ -141,11 +202,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-167" />
-    <option name="y" value="-15" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -305,12 +365,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UnitTest_testAlgorithm - 2019.06.05 at 03h 49m 54s.xml">
-      <configuration name="UnitTest.testAlgorithm" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="UnitTest_testAlgorithm - 2019.06.05 at 03h 50m 29s.xml">
-      <configuration name="UnitTest.testAlgorithm" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="UnitTest_testAlgorithm - 2019.06.05 at 03h 52m 10s.xml">
       <configuration name="UnitTest.testAlgorithm" configurationId="TestNG" />
     </history-entry>
@@ -335,9 +389,15 @@
     <history-entry file="UnitTest_testAlgorithm - 2019.06.05 at 03h 57m 10s.xml">
       <configuration name="UnitTest.testAlgorithm" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="UnitTest_testAlgorithm - 2019.06.05 at 04h 03m 59s.xml">
+      <configuration name="UnitTest.testAlgorithm" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="UnitTest_testAlgorithm - 2019.06.05 at 04h 09m 09s.xml">
+      <configuration name="UnitTest.testAlgorithm" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -345,14 +405,14 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.15618336" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.32056892" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.27193934" />
+      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.31728664" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -368,20 +428,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/nulp/tracingAlgorithm/UnitTest.java</url>
-          <line>10</line>
-          <properties class="com.nulp.tracingAlgorithm.UnitTest" method="testAlgorithm">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -391,32 +437,35 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/nulp/tracingAlgroithm.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/Node.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="425">
+          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="35" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/Wire.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="119">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#186#187#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Coordinate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="544">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="e#253#254#0" expanded="true" />
             <element signature="e#300#301#0" expanded="true" />
@@ -430,21 +479,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/PossibleWire.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#174#175#0" expanded="true" />
             <element signature="e#232#233#0" expanded="true" />
@@ -452,50 +490,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="35" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/nulp/tracingAlgorithm/UnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+        <state relative-caret-position="245">
+          <caret line="24" column="36" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="24" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Connection.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
-          <folding>
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#997#998#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Scheme.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4989#4990#0" expanded="true" />
-            <element signature="e#5023#5024#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/algrorithm/WaveAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+        <state relative-caret-position="834">
+          <caret line="101" column="39" lean-forward="true" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/cell/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nulp/tracingAlgorithm/model/Scheme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-766">
+          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

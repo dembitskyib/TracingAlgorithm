@@ -39,6 +39,7 @@ public class WaveAlgorithm {
     }
 
     private void spreadWave(Node inputNode, Node outputNode) {
+        System.out.println("\n" + inputNode.getName() + " " + outputNode.getName());
         if (deadEnd) {
             return;
         }
