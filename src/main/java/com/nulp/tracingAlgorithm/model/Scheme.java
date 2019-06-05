@@ -13,8 +13,8 @@ public class Scheme {
 
     private List<Cell> cells;
     private List<Connection> connections = new ArrayList<>();
-    private int xMax = 9;
-    private int yMax = 11;
+    private int xMax = 11;
+    private int yMax = 13;
 
     public Scheme() {
         cells = fillCells();
@@ -32,40 +32,39 @@ public class Scheme {
     }
 
     public List<Cell> getPossibleWires(String indexNumber) {
-        return cells.stream().filter(cell -> cell.getClass() == PossibleWire.class || cell.getName().equals(indexNumber)).collect(Collectors.toList());
+        return cells.stream().filter(cell -> cell.getClass() == PossibleWire.class && cell.getName().equals(indexNumber)).collect(Collectors.toList());
     }
 
     public boolean checkCoordinate(Coordinate coordinate) {
         return cells.stream().anyMatch(cell -> cell.getCoordinate().equals(coordinate));
     }
 
-    public boolean provideWire(Coordinate coordinate, int indexNumber) {
-        if (checkCoordinate(coordinate)) {
-            return getCell(coordinate).getClass() == PossibleWire.class &&
-                    getCell(coordinate).getName().equals(Integer.toString(indexNumber));
+    public Coordinate provideWire(String color, Coordinate coordinate, int indexNumber) {
+        Coordinate rightCoordinate = coordinate.moveRight();
+        Coordinate leftCoordinate = coordinate.moveLeft();
+        Coordinate upCoordinate = coordinate.moveUp();
+        Coordinate downCoordinate = coordinate.moveDown();
+        if (checkCoordinate(rightCoordinate) && getCell(rightCoordinate).getClass() == PossibleWire.class &&
+                getCell(rightCoordinate).getName().equals(Integer.toString(indexNumber))) {
+            updateCell(new Wire(color, rightCoordinate.getX(), rightCoordinate.getY()));
+            return rightCoordinate;
         }
-        return false;
-    }
-
-    public int calculateFreeSpace(Coordinate coordinate) {
-        int emptySpace = 0;
-        if (getCell(coordinate.moveRight()).getClass() != Wire.class &&
-                getCell(coordinate.moveRight()).getClass() != Node.class) {
-            emptySpace++;
+        if (checkCoordinate(leftCoordinate) && getCell(leftCoordinate).getClass() == PossibleWire.class &&
+                getCell(leftCoordinate).getName().equals(Integer.toString(indexNumber))) {
+            updateCell(new Wire(color, leftCoordinate.getX(), leftCoordinate.getY()));
+            return leftCoordinate;
         }
-        if (getCell(coordinate.moveLeft()).getClass() != Wire.class &&
-                getCell(coordinate.moveLeft()).getClass() != Node.class) {
-            emptySpace++;
+        if (checkCoordinate(upCoordinate) && getCell(upCoordinate).getClass() == PossibleWire.class &&
+                getCell(upCoordinate).getName().equals(Integer.toString(indexNumber))) {
+            updateCell(new Wire(color, upCoordinate.getX(), upCoordinate.getY()));
+            return upCoordinate;
         }
-        if (getCell(coordinate.moveUp()).getClass() != Wire.class &&
-                getCell(coordinate.moveUp()).getClass() != Node.class) {
-            emptySpace++;
+        if (checkCoordinate(downCoordinate) && getCell(downCoordinate).getClass() == PossibleWire.class &&
+                getCell(downCoordinate).getName().equals(Integer.toString(indexNumber))) {
+            updateCell(new Wire(color, downCoordinate.getX(), downCoordinate.getY()));
+            return downCoordinate;
         }
-        if (getCell(coordinate.moveDown()).getClass() != Wire.class &&
-                getCell(coordinate.moveDown()).getClass() != Node.class) {
-            emptySpace++;
-        }
-        return emptySpace;
+        return null;
     }
 
     public void increaseSize() {
@@ -80,7 +79,6 @@ public class Scheme {
         }
         draw();
     }
-
 
     public void clearPossibleWires() {
         List<Cell> possibleCells = cells.stream().filter(cell -> cell.getClass() == PossibleWire.class).collect(Collectors.toList());
@@ -103,12 +101,14 @@ public class Scheme {
     }
 
     public void draw() {
+        System.out.println();
         for (int i = yMax - 1; i >= 0; i--) {
             for (int j = 0; j < xMax; j++) {
                 System.out.print(getCell(new Coordinate(j, i)).getName() + " ");
             }
             System.out.println();
         }
+        System.out.println();
     }
 
     public List<Cell> getCells() {

@@ -10,21 +10,21 @@ public class UnitTest {
     @Test
     public void testAlgorithm() {
         Scheme scheme = new Scheme();
-        scheme.updateCell(new Node("E", 1, 2));
-        scheme.updateCell(new Node("H", 1, 5));
-        scheme.updateCell(new Node("B", 3, 8));
-        scheme.updateCell(new Node("A", 4, 3));
-        scheme.updateCell(new Node("F", 6, 6));
-        scheme.updateCell(new Node("C", 6, 9));
-        scheme.updateCell(new Node("D", 7, 1));
+        scheme.updateCell(new Node("E", 2, 3));
+        scheme.updateCell(new Node("H", 2, 6));
+        scheme.updateCell(new Node("B", 4, 9));
+        scheme.updateCell(new Node("A", 5, 4));
+        scheme.updateCell(new Node("F", 7, 7));
+        scheme.updateCell(new Node("C", 7, 10));
+        scheme.updateCell(new Node("D", 8, 2));
         scheme.connectNodes("B", "A");
         scheme.connectNodes("B", "A");
-//        scheme.connectNodes("C", "A");
-//        scheme.connectNodes("H", "A");
-//        scheme.connectNodes("D", "E");
-//        scheme.connectNodes("D", "E");
-//        scheme.connectNodes("D", "B");
-//        scheme.connectNodes("D", "B");
+        scheme.connectNodes("C", "A");
+        scheme.connectNodes("H", "A");
+        scheme.connectNodes("D", "E");
+        scheme.connectNodes("D", "E");
+        scheme.connectNodes("D", "B");
+        scheme.connectNodes("D", "B");
 //        scheme.connectNodes("E", "F");
 //        scheme.connectNodes("E", "C");
 //        scheme.connectNodes("C", "F");
